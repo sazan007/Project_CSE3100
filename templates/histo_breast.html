@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>prediction</title>
+</head>
+<body>
+    <div class="menu_bar">
+        <h1 class="logo">Medi<span>Test</span></h1>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li>
+                <a href="#">Predict <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown_menu">
+                    <ul>
+                        <li><a href="/bch">Breast Cancer Using Histopathological Image</a></li>
+                        <li><a href="/breastcancer">Breast Cancer</a></li>
+                        <li><a href="/parkinsons">Parkinson Disease</a></li>
+
+                    </ul>
+                </div>
+            
+            </li>
+            <li><a href="\consultancy">Consultancy</a></li>
+            
+
+        </ul>
+    </div>
+
+    <div class="Intro">
+        <h1 class="text-center">Breast Cancer Prediction</h1>
+        <h3 class="text-center2">Upload the Histopathological Image</h3>
+    </div>
+    
+    <div class="breastcancerhisto">
+    
+        <form class="form-4" action="/predict3" method="post" enctype="multipart/form-data" >
+            <input class="form-control" type="file" name="ImageFile">
+            <input class="sub-btn" type="submit" value="Predict Image">
+            <div clas="pt3">
+                {% if prediction_text3 %}
+                <img src="{{image_path}}" height="200px" width="200px" class="show_img" >
+                <h2><i> {{prediction_text3}} </i></h2>
+                {% endif %}
+            </div>
+            
+        </form>
+
+        
+    </div>
+
+
+</body>
+</html>

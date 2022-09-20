@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Parkinsons Disease</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <div class="menu_bar">
+        <h1 class="logo">Medi<span>Test</span></h1>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li>
+                <a href="#">Predict <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown_menu">
+                    <ul>
+                        <li><a href="/bch">Breast Cancer Using Histopathological Image</a></li>
+                        <li><a href="/breastcancer">Breast Cancer</a></li>
+                        <li><a href="#">Parkinson Disease</a></li>
+
+                    </ul>
+                </div>
+            
+            </li>
+            <li><a href="\consultancy">Consultancy</a></li>
+
+        </ul>
+    </div>
+
+    <div class="parkinsons">
+        <h1>PARKINSONS DISEASE</h1>
+        <h4>ENTER THE VALUE OF THE FOLLOWING ATTRIBUTES</h4>
+        <form class="input2" action="{{ url_for('predict2')}}" method="post"> 
+            <input type="text" name="MDVP:Fo(Hz)" placeholder="MDVP:Fo(Hz)" required />
+            <input type="text" name="MDVP:Fhi(Hz)" placeholder="MDVP:Fhi(Hz)" required />
+            <input type="text" name="MDVP:Flo(Hz)" placeholder="MDVP:Flo(Hz)" required />
+            <input type="text" name="MDVP:Jitter(%)" placeholder="MDVP:Jitter(%)" required />
+            <br>
+            <input type="text" name="MDVP:Jitter(Abs)" placeholder="MDVP:Jitter(Abs)" required />
+            <input type="text" name="MDVP:RAP" placeholder="MDVP:RAP" required />
+            <input type="text" name="MDVP:PPQ" placeholder="MDVP:PPQ" required />
+            <input type="text" name="Jitter:DDP" placeholder="Jitter:DDP" required />
+            <br>
+            <input type="text" name="MDVP:Shimmer" placeholder="MDVP:Shimmer" required />
+            <input type="text" name="MDVP:Shimmer(dB)" placeholder="MDVP:Shimmer(dB)" required />
+            <input type="text" name="Shimmer:APQ3" placeholder="Shimmer:APQ3" required />
+            <input type="text" name="Shimmer:APQ5" placeholder="Shimmer:APQ5" required />
+            <br>
+            <input type="text" name="MDVP:APQ" placeholder="MDVP:APQ" required />
+            <input type="text" name="Shimmer:DDA" placeholder="Shimmer:DDA" required />
+            <input type="text" name="NHR" placeholder="NHR" required />
+            <input type="text" name="HNR" placeholder="HNR" required />
+            <br>
+            <input type="text" name="RPDE" placeholder="RPDE" required />
+            <input type="text" name="DFA" placeholder="DFA" required />
+            <input type="text" name="spread1" placeholder="spread1" required />
+            <input type="text" name="spread2" placeholder="spread2" required />
+            <br>
+            <input type="text" name="D2" placeholder="D2" required />
+            <input type="text" name="PPE" placeholder="PPE" required />
+            <br>
+
+            <div class="submit_button2">
+                <button type="submit">PREDICT</button>
+                <input type="reset" name="RESET" value="RESET">
+            </div>
+    
+            </form>
+    
+            <div class="prediction_text">
+                <center>
+            <h1>{{ prediction_text2 }}</h1>
+                </center>
+            </div>
+
+    </div>
+
+
+</body>

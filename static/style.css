@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+
+.menu_bar{
+    background-color: rgb(55, 76, 78);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.logo{
+    color:white;
+    font-size: 30px;
+    padding: 10px 30px;
+}
+
+.logo span{
+    color:rgb(248, 50, 0);
+}
+
+.menu_bar ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu_bar ul li{
+    padding: 10px 30px;
+    position: relative;
+}
+.menu_bar ul li a{
+    color:white;
+    text-decoration: none;
+    font-size:  20px;
+    transition: all 0.3s;
+}
+
+.menu_bar ul li a:hover{
+   color: rgb(248, 50, 0);
+}
+
+.dropdown_menu
+{
+    display: none;
+}
+.menu_bar ul li:hover .dropdown_menu{
+    display: block;
+    position: absolute;
+    background-color: rgb(55, 76, 78);
+    left:0%;
+    top:100%;
+    text-align: center;
+
+}
+
+
+.dropdown_menu ul{
+    display: block;
+    margin: 10px;
+}
+
+.dropdown_menu ul li{
+    width: 300px;
+
+    padding: 10px;
+}
+
+.fas{
+    font: right;
+    margin-left: 10px;
+    padding-top: 3px;
+}
+
+
+.background{
+    height: calc(100vh - 80px);
+    background-image: url('/static/image/dna_3.webp') ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.background .honwy{
+    opacity: 100%;
+}
+
+.breastcancer h1{
+    color: rgb(161, 12, 24);
+    text-align: center;
+    margin-top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+}
+
+.breastcancer h4{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+input{
+    padding:5px 5px;
+}
+
+.input{
+    margin-top: 30px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+
+.submit_button{
+    text-align: center;
+    float : center;
+}
+
+
+
+.parkinsons h1{
+    color: rgb(12, 161, 161);
+    text-align: center;
+    margin-top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+}
+
+.parkinsons h4{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+.parkinsons input{
+    padding:5px 5px;
+}
+.input2{
+    margin-top: 30px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.submit_button2{
+    text-align: center;
+    float : center;
+    padding-top: 20px;
+
+}
+
+button[type="submit"]{
+    background-color: #1d1925;  /**/
+    color: white;
+    border: none;
+    margin-top: 20px;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 13px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.parkinsons .prediction_text h1{
+    padding-top: 20px;
+    color: rgb(235, 43, 43);
+    font-family: sans-serif;
+}
+
+input[type="reset"]
+{
+    background-color:  #1d1925;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin-left: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 13px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+.Intro .text-center{
+    padding-top: 2%;
+    text-align: center;
+    color: rgb(161, 12, 24);
+}
+.Intro .text-center2{
+    text-align: center;
+    color: rgb(22, 125, 156);
+    font-family:monospace;
+}
+.form-4{
+    text-align:center;
+    padding-top: 5%;
+    padding-bottom: 90%;
+}
+
+
+.sub-btn{
+    text-align: center;
+    background-color:rgb(25, 39, 70) ;
+    color: aliceblue;
+}
+
+.c_intro h1{
+    text-align: center;
+    color: rgb(25, 230, 230);
+    padding-top: 3%;
+    
+}
+
+.doctorslist{
+    padding-top: 30px;
+}
+
+.morshed{
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-top: 6px;
+    
+}
+
+.one h3{
+    text-align: center;
+}
+.one h4{
+    text-align: center;
+}
+
+.one h5{
+    text-align: center;
+}
+
+.contact_morshed{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.jalaluddin{
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-top: 6px;
+}
+
+.two{
+    padding-top: 40px;
+}
+
+.contact_jalaluddin{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.two h3{
+    text-align: center;
+}
+.two h4{
+    text-align: center;
+}
+
+.two h5{
+    text-align: center;
+}
+
+.bc_pred_text{
+    padding-top: 50%;
+}
+.bc_pred_text h1{
+    color: red;
+
+}
+
+ .form-4  h2{
+    color: rgb(116, 33, 102);
+    padding-top: 50px;
+}
+
+.show_img{
+    padding-top: 30px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(42, 46, 46);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: aliceblue;
+}
+
+.footer_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+
+.cellphone{
+    padding-bottom: 40px;
+}
+
+.socials li{
+    margin: 0 10px;
+
+}
+
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+
+.footer_bottom{
+    background: #000;
+    width:100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer_bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+
+}
+
+.footer_bottom span{
+    opacity: .4;
+    font-weight: 200;
+
+}
+.a_title{
+    font-size: 26px;
+    font-family: MS Gothic;
+    line-height: 32px;
+    color:#050a4e;
+}
+
+.a_what{
+  color:black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.row {
+    display: flex;
+  }
+  
+.column {
+    flex: 50%;
+  }
+
+  .copyright{
+    color:#050a4e;
+  }
